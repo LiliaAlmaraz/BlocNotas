@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
-    font-family: 'Nerko One', cursive;
-    background: #61bfcf;
+    font-family: 'Montserrat', sans-serif;
+    background: #e0c7d3;
 }
 .top{    
     position: fixed;
     width: 100%;
     height: 5rem;
-    background: #07566e;
+    background: #8a3d61;
     letter-spacing: 2pt; 
     color: #ffffff;
     display: flex;
@@ -20,12 +21,19 @@ body{
     flex-direction: column;
     text-align: center;
 }
+.user{
+    height: 2.5rem;
+    width: 2.5rem;
+    position: absolute;
+    left: 9rem;
+    cursor: pointer;
+}
 .menu{
     margin-top: 5rem;
     position: fixed;
-    width: 20rem;
+    width: 30rem;
     height: 100vh;
-    background: #272727;
+    background: #b37191;
     color: #ffffff;
     line-height: 7rem;
     text-align: center;
@@ -39,8 +47,7 @@ body{
     transition: .3s;
 }
 .menu li:hover{
-    background: #ffffff;
-    color: #000000;
+    background: #50028f8f;
     letter-spacing: 4pt; 
 }
 .contenido{
@@ -49,19 +56,52 @@ body{
     height: 100vh;
     width: 75%;
     margin-left:22rem;
-    border: #1552a1bb solid 1px;
+    background: #50028f8f;
 }
 .contenido > p{
     margin: 1rem;
     padding: 1rem;
     text-align: justify;
 }
-.contenido > img{
-    height: 17rem;
+
+.cuadrados{
+    width: 20rem;
+    height: 20rem;
+    margin-left: 4.5rem;
+    background:#ce59be;
+    border: #00000023 solid 2px;
+    border-radius: 25px;
+}
+.caja{
+    margin-top: .5rem;
     width: 17rem;
-    background: #467ed1;
-    border-radius: 100%;
-    border: #467ed1 solid 3px;
-    display:block;
-    margin:auto;
+    height: 17rem;
+    border-radius: 15px;
+    border: none;
+    text-align: initial;
+    background: #ffffff8a;
+    outline: none;
+}
+.guardar{
+    position: absolute;
+    width: 10rem;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    background: #50028f8f;
+    color: #ffffff;
+    border-radius: 25px;
+    transition: .3s;
+    top: 25rem;
+    left: 9.5rem;
+}
+.guardar:hover{
+    background: #6e0d77b0;
+    letter-spacing: 4pt; 
+}
+svg{
+    color: #ffffff;
+
 }
